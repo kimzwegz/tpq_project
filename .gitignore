@@ -5,6 +5,7 @@ venv/*
 env/
 **env/
 logging/
+**ipynb_checkpoints/
 
 **.pyc
 **.DS_Store
