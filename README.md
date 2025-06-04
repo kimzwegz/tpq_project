@@ -63,7 +63,7 @@ Copy the URL that includes `http://127.0.0.1:9999/...` and open it in your local
 
 ### <h4>Full Backtest Execution Loop for All Instruments</h4>
 
-⚠️ **This block takes approximately 160 minutes to run on a 4-core CPU with 32 GB RAM**.  
+⚠️ **This block (cell 6) takes approximately 160 minutes to run on a 4-core CPU with 32 GB RAM**.  
 The backtest saves a results file (`.parquet`) per instrument. You do **not** need to re-run this unless you want to recalculate the full grid search results.
 
 ---
