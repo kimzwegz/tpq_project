@@ -1,4 +1,3 @@
-
 # TPQ Project
 
 This repository contains a full implementation of a MACD-based strategy research pipeline using hourly CFD data. The project focuses on robust parameter selection using randomized in-sample evaluation and out-of-sample validation.
@@ -21,7 +20,7 @@ tpq_project/
 - Docker installed on your Linux/macOS system.
 - The user runs everything locally.
 
-## Setup Instructions
+## Setup Instructions for a personal machine
 
 1. **Clone the repository**
 
@@ -57,7 +56,42 @@ Or copy and paste one of these URLs:
 
 Copy the URL that includes `http://127.0.0.1:9999/...` and open it in your local browser.
 
+## Setup Instructions for Google Colab
+
+### 1. **Import the Notebook on Google Colab**
+
+- Go to [https://colab.research.google.com](https://colab.research.google.com)
+- Click on the **"GitHub"** tab
+- Paste the following URL into the search bar:
+
+  ```
+  https://github.com/kimzwegz/tpq_project/blob/main/tpq_collab.ipynb
+  ```
+
+- Select `tpq_collab.ipynb` from the list that appears and open it.
+
+> 📌 Alternatively, you can open it directly with this badge:
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kimzwegz/tpq_project/blob/main/tpq_collab.ipynb)
+
 ---
+
+### 2. **Set Up the Colab Notebook**
+
+- Run the **first cell** in the notebook.
+  - This will:
+    - Clone the GitHub repository
+    - Install required dependencies (`pyodbc`, `mlflow`, etc.)
+    - Fix module import paths so that internal code runs correctly
+
+---
+
+### 3. **Restart the Runtime**
+
+- If prompted by Colab, go to **Runtime > Restart runtime**
+- After restarting, click **Runtime > Run all** to execute the entire notebook
+
+> 🔄 Restarting ensures all installed packages and paths are correctly loaded into memory.
 
 ## Notes
 
