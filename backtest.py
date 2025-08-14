@@ -401,10 +401,10 @@ class BackTest:
                         sample=s
                     )
                     # Append results to appropriate key in the same HDF5 file (mode='a' appends to existing file)
-                    # if s is None:
-                    #     df_stats.to_hdf(path_backtest, key='all', mode='a')  # Full-sample
-                    # else:
-                    #     df_stats.to_hdf(path_backtest, key=s, mode='a')      # Out-of-sample
+                    if s is None:
+                        df_stats.to_hdf(path_backtest, key='all', mode='a')  # Full-sample
+                    else:
+                        df_stats.to_hdf(path_backtest, key=s, mode='a')      # Out-of-sample
 
                 # Run randomized in-sample backtests (e.g., 10 folds of 80% of in-sample)
                 df_rand = self.run_random_backtest(
@@ -416,7 +416,7 @@ class BackTest:
                     n=n
                 )
                 # Save the randomized results to the same HDF5 file under 'rand' key
-                # df_rand.to_hdf(path_backtest, key='rand', mode='a')
+                df_rand.to_hdf(path_backtest, key='rand', mode='a')
 
                 # Increment instrument counter
                 counter += 1

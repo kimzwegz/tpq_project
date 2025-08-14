@@ -10,6 +10,7 @@ tpq_project/
 │   ├── backtest/      # Backtest result files (.h5) for each instrument
 │   └── data/          # Raw data downloaded from OANDA
 ├── utils/             # Core module with all trading and backtesting logic
+├── backtest.py        # Main backtester; holds BackTest class that manages all the calculations
 ├── main.ipynb         # Main research notebook
 ├── docker_run.sh      # Script to launch Docker container with preinstalled environment
 └── launch_jupyter.sh  # Script to start Jupyter Lab inside the Docker container
